@@ -49,6 +49,7 @@ print("value of tag Targa:")
 print(getValueFromSoapMessageAttribute(soapRequest, "ns4:item"))
 
 var col = getLengthFromSoapMessageAttribute(soapRequest, "ns3:attestati")
+print("logitud de atestati: " + col)
 var iter = 0
 while(iter< col){
 var maped = getMapFromNode(getDocumentFromSoapMessage(soapRequest).getElementsByTagName("ns3:attestati").item(iter).ChildNodes) 
