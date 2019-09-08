@@ -30,9 +30,9 @@ uses java.util.ArrayList;
 uses java.util.List;
 uses java.util.HashMap
 
-print("Hello, Test with files")
+print("Hello, Test with xml files")
 
-var fichero : File = new File("D:\\ESTUDIO\\REPASO\\JAVA\\Gestficheros\\GestXML\\response.xml") //Modificar
+var fichero : File = new File("D:\\ESTUDIO\\CURSOS\\GIT\\ProiyectoGIT3\\response.xml") //Modificar
 print("fichero recogido")
 print("La ruta del fichero es: "+fichero.AbsolutePath)
 
@@ -49,6 +49,7 @@ print("value of tag Targa:")
 print(getValueFromSoapMessageAttribute(soapRequest, "ns4:item"))
 
 var col = getLengthFromSoapMessageAttribute(soapRequest, "ns3:attestati")
+print("logitud de atestati: " + col)
 var iter = 0
 while(iter< col){
 var maped = getMapFromNode(getDocumentFromSoapMessage(soapRequest).getElementsByTagName("ns3:attestati").item(iter).ChildNodes) 
@@ -57,7 +58,8 @@ iter +=1
 }
 
 var list = getColectionFromSoapMessageAttribute(soapRequest, "ns4:item")
-
+print("previous plate:")
+print(getValueFromSoapMessageAttribute(soapRequest, "Targa"))
 
 
 print("Change value Targa:")
