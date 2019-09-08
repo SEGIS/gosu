@@ -30,9 +30,9 @@ uses java.util.ArrayList;
 uses java.util.List;
 uses java.util.HashMap
 
-print("Hello, Test with files")
+print("Hello, Test with xml files")
 
-var fichero : File = new File("D:\\ESTUDIO\\REPASO\\JAVA\\Gestficheros\\GestXML\\response.xml") //Modificar
+var fichero : File = new File("D:\\ESTUDIO\\CURSOS\\GIT\\ProiyectoGIT3\\response.xml") //Modificar
 print("fichero recogido")
 print("La ruta del fichero es: "+fichero.AbsolutePath)
 
