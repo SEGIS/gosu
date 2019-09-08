@@ -58,7 +58,8 @@ iter +=1
 }
 
 var list = getColectionFromSoapMessageAttribute(soapRequest, "ns4:item")
-
+print("previous plate:")
+print(getValueFromSoapMessageAttribute(soapRequest, "Targa"))
 
 
 print("Change value Targa:")
